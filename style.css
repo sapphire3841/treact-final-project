@@ -831,6 +831,7 @@ letter-spacing: 0.25em;
     letter-spacing: 0.05em;
 }
 
+
 .plan__name,
 .plan__price,
 .plan__duration {
@@ -841,8 +842,9 @@ letter-spacing: 0.25em;
 .plan:nth-child(1) .plan__stripe,
 .plan:nth-child(1) .plan__button {
     color: #f7fafc;
-    background: linear-gradient( 115deg, rgb(56, 178, 172) 0% rgb(129, 230, 217) 100% );
+    background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
 }
+
 
 .plan:nth-child(odd) .plan__name,
 .plan:nth-child(odd) .plan__price,
@@ -860,6 +862,29 @@ border-top: 2px solid rgb(229, 231, 235);
 border-bottom: 2px solid rgb(229, 231, 235)
 }
 
+
+
+.plan:nth-child(2) {
+    background-color: linear-gradient( 135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100% );
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan__duration,
+.plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
+}
+
 .plans__blob {
     z-index: -10;
     position: absolute;
@@ -867,6 +892,7 @@ border-bottom: 2px solid rgb(229, 231, 235)
     bottom: 0;
     transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
 }
+
 
 
 
